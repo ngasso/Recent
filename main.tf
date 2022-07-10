@@ -154,9 +154,9 @@ resource "aws_security_group" "sg_web" {
       to_port = 0
     } 
 }
-resource "aws_key_pair" "my_key1" {
+resource "aws_key_pair" "my_key" {
     public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDHhEHeKf34JcsLdT3Jw4JCZLTGTxWah5/SNaGXTWE5GtE5FqFXZp2Y/dneE1L9I/gWrQ+o/HA82i31bcF/3cFw9Ze3X+Mnm0b1+QPOcbY0h1KMvsSeiw2bHB+aSa/UsKbTNuQwdiaGkuqdToJCSRkj3I5vm66suKk2vImeEmJJ6NyiCow+C/ql7V/K4TN/hUnbasXaKG9JXNLbbtIaDWWhoOjFXzkhNz5fftPpHIGnET+pz+hrSWkKOtULfKM0gmgh40O9LkHVKkrhLdZcLt7fHj/29WAXvDXpNwV2zilrwuC5qlNiYBlYHJO86kklj5nbtuJTHEcIOg6ao7zEfmUcd8RGNy5hGt8/CaBIbXaDWLKpfBrToN5JO7nD2omSpKmctZWyWHt+W91bTO4w+dfpXeEFt3949dAt2YrbXS6yju+sZsV6M7n5VFGrFbrdFUSHdQGK99y3PbIE03mKse0eu6IMt06b1w+D67EoNeeIV6LVjNXw/YvOixKSyBWLp5M= tangk@DESKTOP-E9F7EG6"
-    key_name = "my_ec2_key1"
+    key_name = "my_ec2_key"
 }
 resource "aws_instance" "web_instance" {
   ami           = "ami-0533f2ba8a1995cf9"
