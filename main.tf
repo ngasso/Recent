@@ -163,7 +163,7 @@ resource "aws_instance" "app_instance" {
   instance_type = "t2.micro"
   key_name = aws_key_pair.my_key.key_name
   subnet_id = aws_subnet.PublicSubnet1.id
-  vpc_security_group_ids = [aws_security_group.sg_app.id]
+  vpc_security_group_ids = [aws_security_group.sg_web.id]
   associate_public_ip_address = true
   user_data = file("apache.sh")
 }
